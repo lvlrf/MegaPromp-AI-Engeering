@@ -1,0 +1,450 @@
+# 🎯 Smart Project Generator
+## MegaPrompt for Organized Development
+
+---
+
+## 📥 HOW TO USE
+
+**Step 1:** Copy this entire prompt  
+**Step 2:** Paste in Claude web chat  
+**Step 3:** Add your project description (can be messy/unorganized)  
+**Step 4:** Get 5 organized files instantly
+
+---
+
+## 🤖 THE MEGAPROMPT (Copy from here ↓)
+
+```
+You are a technical project organizer. I will give you my project idea and requirements (which may be disorganized, scattered, or out of order). Your job is to:
+
+1. **Organize** my thoughts without adding or removing information
+2. Generate **5 optimized files** for token-efficient development
+3. Focus on **clarity and structure**, not interpretation
+
+---
+
+## OUTPUT FORMAT
+
+Generate exactly these 5 files:
+
+### File 1: PRD.md (Product Requirements Document)
+**Purpose:** Human-readable document to explain the project to others  
+**Rules:**
+- Use natural, conversational Persian/English
+- Organize my scattered thoughts into logical sections
+- DO NOT add features I didn't mention
+- DO NOT remove details I provided
+- Just rearrange for clarity
+
+**Structure:**
+```markdown
+# [Project Name]
+
+## 🎯 هدف پروژه
+[One paragraph explaining what and why]
+
+## 👥 کاربران هدف
+[Who will use this? Their needs/pain points]
+
+## ✨ ویژگی‌های اصلی
+1. [Feature 1 - as I described it]
+2. [Feature 2 - as I described it]
+...
+
+## 🎨 رابط کاربری
+[UI/UX requirements I mentioned]
+
+## 🔧 نیازمندی‌های فنی
+[Tech requirements I specified]
+
+## 📊 معیارهای موفقیت
+[How to measure success - based on my goals]
+
+## 🚫 خارج از محدوده (Out of Scope)
+[Things explicitly NOT included]
+
+## 📝 یادداشت‌های اضافی
+[Any other context I provided]
+```
+
+---
+
+### File 2: TASKS.md (Development Checklist)
+**Purpose:** Sequential tasks for building (for Claude Code or manual dev)  
+**Rules:**
+- Break down into smallest possible steps
+- Ordered by dependency (can't do B before A)
+- Each task = ~30 min - 2 hours work
+- Checkboxes for tracking
+
+**Structure:**
+```markdown
+# 🎯 Development Tasks
+
+## Phase 1: Setup & Foundation
+- [ ] Task 1.1: [Setup description - specific & actionable]
+- [ ] Task 1.2: [Next setup task]
+...
+
+## Phase 2: Core Features
+- [ ] Task 2.1: [First feature - small scope]
+- [ ] Task 2.2: [Next feature - builds on 2.1]
+...
+
+## Phase 3: Integration & Testing
+- [ ] Task 3.1: [Integration task]
+...
+
+## Phase 4: Polish & Deploy
+- [ ] Task 4.1: [Polish task]
+...
+
+---
+
+## 📋 Task Template for Claude Code
+When ready to build a task, use this prompt:
+
+```
+Build Task X.Y from TASKS.md:
+- Read CLAUDE.md for context
+- Follow RULES.md for standards
+- Implement as described in TASKS.md
+- Ask clarifying questions if needed
+```
+```
+
+---
+
+### File 3: SPEC.md (Technical Specification)
+**Purpose:** Token-optimized technical details  
+**Rules:**
+- Max 500 tokens
+- Technical language, no fluff
+- Focus on "what" not "how"
+
+**Structure:**
+```markdown
+# Technical Specification
+
+## Core Goal
+[One sentence technical summary]
+
+## Tech Stack
+- Frontend: [specific technologies]
+- Backend: [specific technologies]
+- Database: [specific technologies]
+- Other: [APIs, services, etc.]
+
+## Key Features (Technical View)
+1. **[Feature]**: [Technical description]
+2. **[Feature]**: [Technical description]
+...
+
+## Data Requirements
+- [What data needs to be stored]
+- [What data needs to be processed]
+- [What data needs to be displayed]
+
+## Performance Requirements
+- [Load time, response time, etc.]
+- [Scalability needs]
+
+## Security Requirements
+- [Authentication method]
+- [Authorization rules]
+- [Data protection needs]
+
+## Integration Points
+- [External APIs]
+- [Third-party services]
+- [Webhooks, etc.]
+```
+
+---
+
+### File 4: ARCHITECTURE.md (System Design)
+**Purpose:** Visual structure and data models  
+**Rules:**
+- Max 600 tokens
+- ASCII diagrams for Claude Code compatibility
+- Focus on components and relationships
+
+**Structure:**
+```markdown
+# System Architecture
+
+## High-Level Flow
+```
+[ASCII diagram of user → frontend → backend → database]
+```
+
+## Component Breakdown
+### Frontend Components
+- [List main components]
+
+### Backend Services
+- [List main services/routes]
+
+### Database Schema
+```
+[Simple ASCII representation of tables/collections]
+```
+
+## Data Models (JSON/TypeScript format)
+```typescript
+interface ModelName {
+  // Fields based on requirements
+}
+```
+
+## Key Interactions
+1. [User action] → [System response]
+2. [User action] → [System response]
+...
+```
+
+---
+
+### File 5: CLAUDE.md (Quick Reference)
+**Purpose:** Ultra-compact context for Claude Code  
+**Rules:**
+- Max 300 tokens
+- Loads automatically in Claude Code
+- Only essentials
+
+**Structure:**
+```markdown
+# Quick Reference
+
+## Stack
+[Tech stack in one line]
+
+## Commands
+```bash
+# List 5-7 most common commands
+```
+
+## File Structure
+```
+[Minimal tree structure]
+```
+
+## Code Standards
+✅ [3-5 key rules]
+❌ [3-5 forbidden patterns]
+
+## Current Focus
+[What we're building right now]
+```
+
+---
+
+## 🎯 YOUR TURN
+
+Now process my project description below and generate all 5 files:
+
+[PASTE YOUR PROJECT DESCRIPTION HERE - can be messy, unorganized, scattered across multiple messages]
+
+---
+
+## ⚙️ Processing Rules
+
+1. **Organization**: Rearrange information into logical sections
+2. **Preservation**: Keep ALL details I mentioned (don't add/remove)
+3. **Clarification**: If something is unclear, note it as "[NEEDS CLARIFICATION: question]"
+4. **Consistency**: Use consistent terminology throughout all files
+5. **Language**: PRD in Persian, technical docs in English (unless requested otherwise)
+
+---
+
+## 📤 Output Format
+
+Return files in this order:
+1. PRD.md
+2. TASKS.md
+3. SPEC.md
+4. ARCHITECTURE.md
+5. CLAUDE.md
+
+Separate each with:
+```
+---
+## 📄 [FILENAME]
+---
+```
+```
+
+---
+
+## ✅ READY TO USE
+
+**What to do now:**
+
+1. **Copy everything above** (from "You are a technical project organizer..." to the end)
+
+2. **Paste in Claude web chat**
+
+3. **Add your project description** at the bottom, for example:
+
+```
+My project description:
+
+میخوام یک اپلیکیشن task management بسازم
+باید تیم‌ها بتونن پروژه بسازن
+هر پروژه میتونه تسک داشته باشه
+تسک‌ها رو میشه به اعضا assign کرد
+باید notification داشته باشیم
+یه dashboard میخوام که progress رو نشون بده
+export به PDF هم نیاز داریم
+احراز هویت با email و password
+باید responsive باشه
+dark mode هم بخوایم
+از React استفاده کنیم
+backend با Node.js
+database PostgreSQL
+...
+[any other scattered thoughts]
+```
+
+4. **Claude returns 5 organized files**
+
+5. **Save files locally:**
+```bash
+mkdir my-project
+cd my-project
+mkdir docs
+
+# Save each file:
+docs/PRD.md
+docs/TASKS.md
+docs/SPEC.md
+docs/ARCHITECTURE.md
+CLAUDE.md  # in root!
+```
+
+6. **Start building:**
+```bash
+# Open TASKS.md
+# Pick first task
+
+# Start Claude Code:
+claude
+
+# Build first task:
+> Build Task 1.1 from TASKS.md following CLAUDE.md guidelines
+```
+
+---
+
+## 🎁 BONUS: Iterative Development
+
+### When you complete a task:
+
+```
+✅ Task 1.1 completed
+
+Claude prompt for next:
+"Task 1.1 done. Review and start Task 1.2 from TASKS.md"
+```
+
+### When you want to add a feature:
+
+```
+Original PRD → Add new section → Regenerate TASKS.md
+
+Prompt:
+"Update TASKS.md to include [new feature] while keeping existing tasks"
+```
+
+### When you need to explain to someone:
+
+```
+Just send them PRD.md - it has everything in human language!
+```
+
+---
+
+## 💡 Pro Tips
+
+1. **Be messy in input** - That's the point! The MegaPrompt will organize it
+2. **Include everything** - Even rough ideas, they'll be organized
+3. **Use any language** - Mix Persian/English, it will handle it
+4. **Don't pre-organize** - Just brain dump, let Claude structure it
+5. **Update as you go** - Regenerate files when requirements change
+
+---
+
+## 📊 Why This Works
+
+### Traditional Approach:
+```
+Your messy notes → You organize → Create docs → Build
+                   ↑ Time consuming!
+```
+
+### Smart Approach:
+```
+Your messy notes → MegaPrompt → Organized docs → Build
+                               ↑ Instant!
+```
+
+### Token Efficiency:
+```
+Traditional: 10,000 tokens per session
+This method: 300 tokens per session (CLAUDE.md only)
+Savings: 97%! 🎉
+```
+
+---
+
+## 🚀 Example Output Preview
+
+When you use this MegaPrompt, you get something like:
+
+**PRD.md** (human-readable):
+```markdown
+# Task Management App
+
+## 🎯 هدف پروژه
+یک ابزار مدیریت تسک برای تیم‌ها که به آن‌ها اجازه می‌دهد
+پروژه‌ها را ایجاد کنند، تسک‌ها را به اعضا اختصاص دهند،
+و پیشرفت را دنبال کنند.
+...
+```
+
+**TASKS.md** (build checklist):
+```markdown
+## Phase 1: Setup
+- [ ] 1.1: Initialize React + TypeScript project
+- [ ] 1.2: Setup Express backend with TypeScript
+- [ ] 1.3: Create PostgreSQL database & migrations
+...
+```
+
+**SPEC.md** (technical):
+```markdown
+# Technical Specification
+
+## Core Goal
+Team collaboration platform for task management
+
+## Tech Stack
+- Frontend: React 18 + TypeScript + Tailwind
+- Backend: Node.js + Express + PostgreSQL
+...
+```
+
+**CLAUDE.md** (Claude Code context):
+```markdown
+# Quick Reference
+
+Stack: React + Node + PostgreSQL
+
+Commands:
+npm run dev
+npm run build
+npm test
+...
+```
+
+All organized, token-optimized, ready to build! 🎯
