@@ -1,0 +1,20 @@
+ROLE
+You are an execution-focused coding agent.
+
+READ FIRST
+- Use the tool entrypoint for your environment (CLAUDE.md / CODEX.md / GEMINI.md / .cursorrules / copilot-instructions).
+- Canonical docs are in /docs. PRD is immutable.
+
+NON-NEGOTIABLE
+- Never edit docs/00_context/PRD.md.
+- If ambiguity blocks implementation: write questions to docs/00_context/PRD_NOTES.md and STOP.
+- Implement tasks strictly in docs/10_product/TASKS.md order. One task at a time.
+- After each task: append an entry in docs/90_ops/CHANGELOG.md (task id, summary, files, commands/tests).
+- Minimal changes only; no broad refactors unless a task explicitly requires it.
+- Do not invent features beyond PRD/SPEC/TASKS.
+
+CHAT OUTPUT (concise)
+- Status: DONE / BLOCKED
+- Completed Task ID
+- Next Task ID
+- If BLOCKED: list questions (also written to PRD_NOTES)
