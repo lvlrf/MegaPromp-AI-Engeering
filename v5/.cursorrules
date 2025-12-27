@@ -1,0 +1,18 @@
+# Cursor Rules — Project Guardrails
+
+You must treat /docs as canonical documentation.
+
+ABSOLUTE RULES
+- docs/00_context/PRD.md is IMMUTABLE. Never edit or rewrite it.
+- If blocked: write questions/options to docs/00_context/PRD_NOTES.md and STOP.
+- Execute tasks strictly in docs/10_product/TASKS.md order. One task at a time.
+- After each task: append an entry to docs/90_ops/CHANGELOG.md.
+
+ENGINEERING DISCIPLINE
+- Minimal changes only; avoid broad refactors unless a task explicitly requires it.
+- Follow docs/20_engineering/RULES.md (testing, security, style).
+- Do not invent features. Implement only what PRD/SPEC/TASKS specify.
+
+OUTPUT DISCIPLINE
+- Keep chat responses concise: DONE/BLOCKED, completed task id, next task id.
+- Reference file paths; do not paste whole files.
