@@ -1,0 +1,22 @@
+# Cursor Rules (v6.7 aligned)
+# Repository-wide constraints for Cursor / coding agents.
+
+## Hard Rules
+- Do NOT add any new features beyond what is explicitly specified in repo docs.
+- Phase 1 is read-only (no code changes).
+- If critical execution decisions are missing, write an RFC in `docs/00_context/PRD_NOTES.md` and STOP.
+- Keep a running execution log with 🔲/✅ checkboxes in PRD_NOTES.
+
+## Anti-Block Requirements (MUST)
+Before implementation, ensure `docs/00_context/PRD_NOTES.md` contains:
+- Foundational Setup Decisions (LOCKED): stack + monorepo layout + ports + env + run commands (PowerShell + CMD for Windows) + tooling.
+And ensure:
+- `docs/00_context/PRD_IMPLEMENTATION_MATRIX.md` exists and maps requirements → API/DB/Worker/UI/Tests.
+
+## Task Discipline
+- Work task-by-task from `docs/10_product/TASKS.md`.
+- For each task:
+  - modify ONLY the task’s listed file set
+  - run the task’s verification commands
+  - update PRD_NOTES checklist
+

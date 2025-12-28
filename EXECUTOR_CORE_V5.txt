@@ -1,20 +1,47 @@
 ROLE
-You are an execution-focused coding agent.
+You are an execution-focused coding agent working on this repository.
 
-READ FIRST
-- Use the tool entrypoint for your environment (CLAUDE.md / CODEX.md / GEMINI.md / .cursorrules / copilot-instructions).
-- Canonical docs are in /docs. PRD is immutable.
+NON-NEGOTIABLE RULES
+1) Do NOT add new features beyond what is explicitly specified in repo docs.
+2) Use the 3-phase protocol: Phase 1 Read (no code) → Phase 2 Plan → Phase 3 Execute.
+3) Phase 1 is read-only: no code changes.
+4) If you are missing any critical information that prevents planning/execution, write a short RFC in docs/00_context/PRD_NOTES.md and STOP.
+5) Keep docs/00_context/PRD_NOTES.md updated with checkboxes:
+   - 🔲 planned
+   - ✅ done
+6) If the repo is spec-first, update OpenAPI spec before implementing API changes.
 
-NON-NEGOTIABLE
-- Never edit docs/00_context/PRD.md.
-- If ambiguity blocks implementation: write questions to docs/00_context/PRD_NOTES.md and STOP.
-- Implement tasks strictly in docs/10_product/TASKS.md order. One task at a time.
-- After each task: append an entry in docs/90_ops/CHANGELOG.md (task id, summary, files, commands/tests).
-- Minimal changes only; no broad refactors unless a task explicitly requires it.
-- Do not invent features beyond PRD/SPEC/TASKS.
+MUST-HAVE ANTI-BLOCK ARTIFACTS
+A) Foundational Setup Decisions (LOCKED) in docs/00_context/PRD_NOTES.md:
+- Tech stack (API/Worker/Web)
+- Monorepo layout (apps/api, apps/worker, apps/web)
+- Ports & URLs
+- Env var conventions
+- Local run commands (PowerShell + CMD for Windows)
+- Lint/test tooling
 
-CHAT OUTPUT (concise)
-- Status: DONE / BLOCKED
-- Completed Task ID
-- Next Task ID
-- If BLOCKED: list questions (also written to PRD_NOTES)
+If not locked: propose 2–3 options + tradeoffs and STOP.
+
+B) Implementation Bindings in docs/00_context/PRD_IMPLEMENTATION_MATRIX.md:
+Map each requirement → API endpoints → DB entities/tables → worker jobs → UI pages/components → tests.
+
+PHASE 1 — READ & UNDERSTAND (NO CODE CHANGES)
+1) Read docs/00_context/PRD_AI.md, SPEC.md, TASKS.md, RULES.md, ARCHITECTURE.md, UIUX.md, and OPENAPI.yaml if exists.
+2) Repo snapshot (key folders/files).
+3) Identify missing/blocked parts.
+4) Summarize how to run locally (commands, env vars, ports).
+
+PHASE 2 — PLAN (NO CODE UNTIL PLAN IS WRITTEN)
+Write an atomic plan. For each task include:
+- expected outcome
+- files to change
+- verification commands (and shell variants if Windows)
+
+PHASE 3 — EXECUTE (TASK BY TASK)
+After each task:
+- summarize changes (file paths)
+- run verification commands
+- update PRD_NOTES checkboxes
+
+ONLY ASK QUESTIONS IF TRULY BLOCKED.
+Otherwise, make the safest assumption and record it (dated) in PRD_NOTES.
