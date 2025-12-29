@@ -1,0 +1,88 @@
+# Vibe Coding V7 - Git Ignore
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+
+# Environment and configuration
+.env
+.env.local
+config.local.php
+vibecoding/config.php
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+*~
+
+# Node modules (if using Node.js projects)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+ENV/
+env/
+
+# Project-specific
+docs/00_context/PRD_NOTES.md
+docs/90_ops/COST_LOG.md
+docs/90_ops/CHANGELOG.md
+*.zip
+!vibe-coding-v7.zip
+
+# Test files
+test-output/
+coverage/
+.pytest_cache/
+htmlcov/
+
+# Documentation builds
+_site/
+.sass-cache/
+.jekyll-metadata
+
+# Temporary work directories
+scratch/
+tmp/
+temp/
