@@ -1,423 +1,578 @@
-# Vibe Coding V7 🚀
+# MegaPrompt V8 - AI-Led Vibe Coding Framework
 
-> **AI-Assisted Software Development Framework**  
-> Transform your ideas into production-ready code with Claude AI
+> Transform ideas into production-ready applications through structured AI-led development
 
-![Version](https://img.shields.io/badge/version-7.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-stable-success)
-
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [What's Included](#whats-included)
-- [Quick Start](#quick-start)
-- [File Structure](#file-structure)
-- [Usage Guide](#usage-guide)
-- [Configuration](#configuration)
-- [Best Practices](#best-practices)
-- [Cost Estimation](#cost-estimation)
-- [Contributing](#contributing)
-- [License](#license)
+[![Version](https://img.shields.io/badge/version-8.0-blue.svg)](https://github.com/yourusername/megaprompt-v8)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![AI Models](https://img.shields.io/badge/AI-Claude%20%7C%20GPT%20%7C%20Gemini-purple.svg)](README.md)
 
 ---
 
-## 🎯 Overview
+## 🎯 What is MegaPrompt V8?
 
-**Vibe Coding V7** is a comprehensive framework for building software projects using AI coding agents (Claude, GPT-4, etc.). It provides a structured, advisor-driven approach that helps non-technical users manage AI-powered development efficiently.
+MegaPrompt V8 is a comprehensive framework that enables AI models (Claude, GPT, Gemini) to transform natural language descriptions into complete, production-ready applications through structured phases and intelligent execution.
 
-### Why Vibe Coding?
-
-- ✅ **Advisor-Driven**: AI guides you through decisions (database, architecture, tools)
-- ✅ **Cost-Effective**: Smart model selection (L/M/H complexity) saves money
-- ✅ **Non-Technical Friendly**: Clear Persian/English documentation
-- ✅ **Production-Ready**: Includes testing, deployment, and monitoring
-- ✅ **Real-Time Tracking**: Telegram notifications + Dashboard monitoring
-- ✅ **Best Practices**: Built-in quality assurance and workflows
+**Key Philosophy**:
+- 🧠 **AI-Led Execution**: AI drives technical implementation
+- 👤 **User-Led Vision**: Users define goals and requirements
+- 🤝 **Collaborative Partnership**: Continuous dialogue and iteration
+- 📊 **Evidence-Based Decisions**: All recommendations backed by data
+- ⚡ **Proactive Intelligence**: AI suggests next steps autonomously
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
-### 🤖 Smart AI Orchestration
-- **Multi-Model Support**: Claude Sonnet (fast/cheap) + Opus (high-quality)
-- **Complexity-Aware**: Automatic model selection based on task difficulty (L/M/H)
-- **Cost Tracking**: Real-time token and budget monitoring
-- **Auto-Backup**: Git commits every 5 tasks
+### Core Capabilities
+- ✅ **Phase-Based Development**: Structured flow from discovery to delivery
+- ✅ **Multi-Model Support**: Works with Claude, GPT, Gemini
+- ✅ **Comprehensive Documentation**: 30+ files auto-generated
+- ✅ **Cost Optimization**: Real-time tracking and multi-model strategies
+- ✅ **Security First**: Automated security checks before delivery
+- ✅ **Quality Gates**: 80%+ test coverage, automated validation
+- ✅ **Technology Radar**: Continuous evaluation of new technologies
+- ✅ **Scalability Planning**: Plan for scale, build essentials now
 
-### 📊 Decision Support
-- **Comparison Tables**: Database, tools, execution modes (interactive HTML)
-- **Complexity Guide**: Detailed L/M/H classification with examples
-- **Cost Estimator**: Predict time and cost before starting
-
-### 🔔 Real-Time Monitoring
-- **Telegram Notifications**: Task completion, errors, budget warnings
-- **Voice Alerts**: Audio notifications (cross-platform)
-- **Live Dashboard**: Web-based progress monitoring
-
-### 📚 Comprehensive Documentation
-- **Agent Instructions**: Tailored for Claude, GPT-4, and other models
-- **Workflow Templates**: PRD, TASKS, ARCHITECTURE, RULES, etc.
-- **Test Checklists**: Automated and manual testing guides
-
----
-
-## 📦 What's Included
-
-### Core Framework Files
-
-| File | Description |
-|------|-------------|
-| `MEGAPROMPT_V7_FINAL.md` | Main advisor-driven megaprompt |
-| `CLAUDE.md` | Claude-specific agent instructions |
-| `AGENT_START_PROMPT.md` | Initial agent protocol |
-| `COMPLEXITY_GUIDE.md` | L/M/H task classification guide |
-
-### Tools & Utilities
-
-| File/Package | Description |
-|--------------|-------------|
-| `vibecoding/` | Telegram notification system (PHP) |
-| `COMPARISON_TABLE.html` | Interactive decision tables |
-| `Dashboard.html` | Real-time monitoring dashboard |
-| `Voice_Notifier.py` | Audio alert system |
-
-### Total Files: **8** | Total Size: **~2MB**
+### Advanced Features
+- 🔄 **Dynamic Role Switching**: 30+ expert roles (DevOps, Security, ML, etc.)
+- 🎨 **Flexible UI/UX Modes**: Support for templates, custom designs, AI generation
+- 💾 **Context Memory**: Persistent decision tracking across sessions
+- 🚨 **Telegram Notifications**: Real-time progress alerts
+- 🔔 **Sound Alerts**: Audio notifications for key events
+- 📦 **Git Auto-Backup**: Automated version control every 5 tasks
+- 🤖 **Multi-Agent Coordination**: Parallel execution with multiple AI models
 
 ---
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### For AI Models
 
-- AI coding agent access (Claude, GPT-4, etc.)
-- Git installed
-- (Optional) Telegram account for notifications
-- (Optional) Web server for Dashboard
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/vibe-coding-v7.git
-cd vibe-coding-v7
-
-# (Optional) Setup Telegram notifications
-cd vibecoding
-# Edit config.php with your bot token and chat ID
-# Upload to your web server
+**1. Identify Your Model**
+```
+□ Claude → Read CLAUDE.md
+□ GPT → Read CODEX.md
+□ Gemini → Read GEMINI.md
 ```
 
-### Basic Usage
+**2. Load Framework**
+```
+Read: MEGAPROMPT_V8_FINAL.md (complete instructions)
+Read: AGENT_START_PROMPT.md (quick setup)
+```
 
-1. **Start a New Project**
-   ```bash
-   # Copy MEGAPROMPT_V7_FINAL.md content
-   # Paste into Claude.ai or ChatGPT
-   # Describe your project
-   ```
+**3. Start Working**
+```
+Begin with Phase 0 greeting
+Follow structured workflow
+Generate comprehensive documentation
+```
 
-2. **AI Generates Documentation**
-   - PRD_AI.md (requirements)
-   - TASKS.md (breakdown)
-   - ARCHITECTURE.md (system design)
-   - RULES.md (constraints)
+### For Users
 
-3. **Agent Executes Tasks**
-   ```bash
-   # Agent reads AGENT_START_PROMPT.md
-   # Analyzes project
-   # Asks for approval
-   # Executes tasks sequentially
-   ```
+**1. Choose Your AI**
+- Claude Sonnet 4.5 (balanced, fast)
+- Claude Opus 4.1 (strongest reasoning)
+- GPT-4o (UI/UX excellence)
+- Gemini 2.0 Flash (speed, efficiency)
 
-4. **Monitor Progress**
-   - Open `Dashboard.html` in browser
-   - Check Telegram notifications
-   - Review `docs/90_ops/COST_LOG.md`
+**2. Start Conversation**
+```
+User: "I want to build [your idea]"
+AI: [Follows MegaPrompt V8 workflow]
+```
+
+**3. Collaborate**
+- AI asks questions (Discovery)
+- You provide answers
+- AI suggests options
+- You make decisions
+- AI builds everything
+
+**4. Receive Deliverable**
+- Complete documentation
+- Production-ready code
+- Tests (80%+ coverage)
+- README and deployment guide
+- ZIP package ready to use
 
 ---
 
-## 📁 File Structure
+## 📂 File Structure
 
+### Agent Configuration Files
 ```
-vibe-coding-v7/
-├── README.md                      # This file
-├── MEGAPROMPT_V7_FINAL.md        # Main advisor prompt
-├── CLAUDE.md                      # Claude agent instructions
-├── AGENT_START_PROMPT.md         # Agent start protocol
-├── COMPLEXITY_GUIDE.md           # L/M/H guide
-├── COMPARISON_TABLE.html         # Decision tables
-├── Dashboard.html                # Monitoring dashboard
-├── Voice_Notifier.py             # Audio alerts
-├── vibecoding/                   # Telegram notification package
-│   ├── notify.php                # Main handler
-│   ├── config.php                # Configuration
-│   ├── README.md                 # Setup guide
-│   ├── .htaccess                 # Security
-│   └── .gitignore                # Git ignore
-└── LICENSE                       # MIT License
+MEGAPROMPT_V8_FINAL.md         # Core framework (complete instructions)
+AGENT_START_PROMPT.md          # Quick start guide
+CLAUDE.md                      # Claude-specific instructions
+CODEX.md                       # GPT-specific instructions
+GEMINI.md                      # Gemini-specific instructions
+.cursorrules                   # Cursor IDE integration
+README.md                      # This file
+```
+
+### Generated Project Structure
+```
+docs/
+  00_context/                  # Requirements & decisions
+    PRD.md                     # User's vision (their words)
+    PRD_ai.md                  # Executable plan
+    PRD_NOTES.md               # Execution log
+    PRD_IMPLEMENTATION_MATRIX.md  # Feature→Task→File mapping (if >20 tasks)
+    DECISIONS.md               # All technical decisions
+    GLOSSARY.md                # Domain terminology
+    CONTEXT_MEMORY.md          # Persistent memory
+
+  10_product/                  # Features & planning
+    SPEC.md                    # Detailed specifications
+    TASKS.md                   # Task breakdown
+    MVP_CHECKLIST.md           # Scope control
+
+  20_engineering/              # Architecture & tech
+    ARCHITECTURE.md            # System design
+    RULES.md                   # Coding standards
+    TECH_STACK.md              # Technology rationale
+    DATABASE_SCHEMA.md         # Data model
+    SECURITY_CHECKLIST.md      # Security protocol
+
+  30_design/                   # UI/UX decisions
+    UIUX.md                    # Design decisions
+    UI_PAGES.md                # Page inventory
+    UI_PROMPTS.md              # AI generation prompts
+    UI_MODE.md                 # Design workflow
+
+  40_api/                      # API specifications
+    OPENAPI.yaml               # API spec (OpenAPI 3.0)
+    OPENSPEC_WORKFLOW.md       # API workflow
+
+  50_testing/                  # Testing strategy
+    TEST_STRATEGY.md           # Testing approach
+
+  90_ops/                      # Operations & tracking
+    CHANGELOG.md               # Change history
+    PROGRESS.md                # Real-time status
+    COST_TRACKING.md           # Budget dashboard
+    TIMELINE_AND_COST.md       # Planning
+    DEPLOYMENT_GUIDE.md        # Deployment steps
+    SCALE_PLAN.md              # Growth strategy
+    TELEGRAM_SETUP.md          # Notification config
+    SOUND_NOTIFICATION_SETUP.md   # Alert config
+    GIT_AUTO_BACKUP.md         # Version control
+
+src/                           # Source code
+tests/                         # Test files
+README.md                      # Project readme
+.env.example                   # Environment template
+package.json                   # Dependencies
 ```
 
 ---
 
-## 📖 Usage Guide
+## 🎨 Development Phases
 
-### 1. Creating a Project
-
-**Step 1: Describe Your Project**
-
-Paste `MEGAPROMPT_V7_FINAL.md` into Claude and describe your project:
-
+### Phase 0: START
 ```
-من یک سیستم رزرو آنلاین برای رستوران می‌خوام.
-فیچرها:
-- ثبت‌نام کاربران
-- رزرو میز
-- منو آنلاین
-- پرداخت آنلاین
+AI greets user in their language
+Explains the process
+Asks what they want to build
 ```
 
-**Step 2: AI Advisory Phase**
+### Phase 1: DISCOVERY (Chat Mode)
+```
+AI asks strategic questions:
+- What problem does this solve?
+- Who are the users?
+- What are the core features?
+- Any constraints (time, budget, scale)?
 
-AI will ask questions and provide recommendations:
-- Database choice (PostgreSQL recommended)
-- Architecture (REST API + React)
-- Tools (Git, OpenAPI, Swagger)
+AI extracts:
+- User personas
+- Use cases
+- Data entities
+- Scale requirements
+```
 
-**Step 3: Review Documentation**
+### Phase 2: PLANNING (Chat Mode)
+```
+AI proposes:
+- Complete feature list (MVP vs Later vs Never)
+- Technology options (with pros/cons/evidence)
+- Architecture approach
+- Timeline estimate
+- Cost projection
+
+User approves each decision
+AI documents everything
+```
+
+### Phase 3: BUILD (Execution Mode)
+```
+Triggered by: "BUILD" or "بساز"
 
 AI generates:
-- `docs/00_context/PRD_AI.md` - Full requirements
-- `docs/10_product/TASKS.md` - 18 tasks with L/M/H labels
-- `docs/20_engineering/ARCHITECTURE.md` - System design
+- All documentation (30+ files)
+- Complete source code
+- Configuration files
+- Tests (80%+ coverage)
+- README and guides
 
-**Step 4: Approve & Execute**
-
-Agent analyzes, estimates cost/time, and asks for approval:
-```
-Estimated: 10h, $25
-Ready to start? (Yes/No)
+AI updates PROGRESS.md after each task
+AI suggests next steps proactively
 ```
 
-### 2. Model Selection Strategy
-
-| Task Complexity | Model | Cost | When to Use |
-|----------------|-------|------|-------------|
-| **L (Low)** | Sonnet | $0.10-0.30 | CRUD, config, simple pages |
-| **M (Medium)** | Sonnet | $0.30-1.50 | Business logic, validation |
-| **H (High)** | Opus | $1.50-4.00 | Payments, auth, security |
-
-**Recommended**: Mixed approach (L/M with Sonnet, H with Opus)
-
-### 3. Monitoring Progress
-
-**Option 1: Dashboard (Local)**
-```bash
-# Open Dashboard.html in browser
-open Dashboard.html
+### Phase 4: DELIVERY
 ```
+AI performs:
+- Security scan (auto-check)
+- Quality gates validation
+- Test coverage verification
+- Documentation completeness
+- Final README generation
 
-**Option 2: Telegram Notifications**
-```bash
-# Setup once (see vibecoding/README.md)
-# Then receive automatic notifications
-```
-
-**Option 3: Voice Alerts**
-```bash
-python Voice_Notifier.py task_complete "Task 5 done!"
+AI packages:
+- ZIP file with everything
+- Clear installation instructions
+- Quick start guide
 ```
 
 ---
 
-## ⚙️ Configuration
+## 🤖 Multi-Model Strategy
 
-### Telegram Notifications
+For projects with 20+ tasks, MegaPrompt V8 can coordinate multiple AI models:
 
-1. Get bot token from [@BotFather](https://t.me/BotFather)
-2. Get chat ID from [@userinfobot](https://t.me/userinfobot)
-3. Edit `vibecoding/config.php`:
-   ```php
-   $TELEGRAM_BOT_TOKEN = 'your-bot-token';
-   $TELEGRAM_CHAT_ID = 'your-chat-id';
-   ```
-4. Upload to server: `public_html/vibecoding/`
-5. Test: `https://yoursite.com/vibecoding/notify.php?setup=true`
+### Recommended Distribution
 
-### Voice Notifications
+```
+High Complexity (Architecture, Security):
+→ Claude Opus 4.1 / GPT o1
 
-**Windows**: No setup needed (uses `winsound`)
+Medium Complexity (Backend, API):
+→ Claude Sonnet 4.5 / GPT-4o
 
-**Mac**: No setup needed (uses `afplay` and `say`)
+Low Complexity (Frontend, UI):
+→ Gemini Flash 2.0 / GPT-4o
 
-**Linux**:
-```bash
-# Install audio tools (optional)
-sudo apt-get install espeak
-# Or
-sudo apt-get install festival
+Testing (Fast iteration):
+→ Gemini Flash 2.0
+
+Documentation:
+→ Gemini Pro 2.0 / GPT-4o
+```
+
+### Cost & Time Comparison
+
+| Strategy | Duration | Cost | Quality |
+|----------|----------|------|---------|
+| Single Model | 12h | $25 | ★★★★☆ |
+| Multi-Model Balanced | 7h | $28 | ★★★★★ |
+| Multi-Model Speed | 5h | $35 | ★★★★☆ |
+| Multi-Model Budget | 10h | $18 | ★★★☆☆ |
+
+---
+
+## 💡 Example Workflow
+
+### User Perspective
+
+```
+User: "I want to build a task management app"
+
+AI: "Great! Let me understand your vision.
+     
+     What problem does this solve for users?
+     Who will use it (personal, teams, both)?
+     Any specific features you need?
+     Timeline or budget constraints?"
+
+User: [Answers questions]
+
+AI: "Based on your input, here are all features:
+     
+     MVP (Build Now):
+     ● User authentication
+     ● Create/edit/delete tasks
+     ● Mark tasks as complete
+     
+     Future (Later):
+     ○ Team collaboration
+     ○ File attachments
+     ○ Email notifications
+     
+     Out of Scope:
+     🚫 Mobile app (use PWA instead)
+     
+     Approve?"
+
+User: "Yes"
+
+AI: "Technology choices:
+     
+     Frontend: React vs Vue vs Svelte
+     [Shows pros/cons/evidence for each]
+     My recommendation: React
+     Reason: [specific rationale]
+     
+     Your choice?"
+
+User: "React"
+
+AI: "Perfect! Ready to build?
+     
+     Timeline: 2 weeks
+     Cost: $25 (using Claude Sonnet)
+     Deliverable: Complete app + docs
+     
+     Say 'BUILD' when ready"
+
+User: "BUILD"
+
+AI: [Generates all files, provides progress updates]
+
+AI: "📦 Project complete!
+     
+     [Download ZIP - 2.3MB]
+     
+     Quick start:
+     1. Extract ZIP
+     2. npm install
+     3. npm run dev
+     
+     Enjoy! 🚀"
 ```
 
 ---
 
-## 🎯 Best Practices
+## 🔒 Security Features
 
-### 1. Task Complexity Labeling
+### Automated Security Checks
 
-✅ **Always label complexity**:
-- Check security sensitivity
-- Consider edge cases
-- Review COMPLEXITY_GUIDE.md
+Before every delivery:
+```
+✅ API keys in .env (not hardcoded)
+✅ Passwords hashed (bcrypt/argon2)
+✅ SQL injection prevention
+✅ CORS properly configured
+✅ Rate limiting implemented
+✅ Dependencies scanned for vulnerabilities
+```
 
-❌ **Avoid**:
-- Guessing complexity
-- Using Opus for simple tasks
-- Skipping High tasks with Sonnet
+### Security Checklist File
 
-### 2. Cost Management
+Generated: `docs/20_engineering/SECURITY_CHECKLIST.md`
 
-✅ **Do**:
-- Set budget before starting
-- Monitor COST_LOG.md
-- Use recommended model mix
-
-❌ **Don't**:
-- Use all-Opus unless necessary
-- Ignore budget warnings
-- Skip cost estimation
-
-### 3. Communication
-
-✅ **Terminal Output**: Always English (Persian breaks in terminals)
-
-✅ **User Documentation**: Persian (README, TEST_CHECKLIST)
-
-✅ **Technical Docs**: English (ARCHITECTURE, API specs)
+Contains:
+- Authentication best practices
+- Authorization patterns
+- Input validation rules
+- Error handling guidelines
+- Dependency security
+- Deployment security
 
 ---
 
-## 💰 Cost Estimation
+## 📊 Cost Tracking
 
-### Example Project: 18 Tasks
+### Real-Time Dashboard
 
-| Approach | Time | Cost | Quality | Recommended |
-|----------|------|------|---------|-------------|
-| All Sonnet | 12h | $18 | ★★★☆☆ | Budget-tight |
-| **Mixed (Recommended)** | **10h** | **$25** | **★★★★☆** | **✅ Best** |
-| All Opus | 8h | $45 | ★★★★★ | Quality-critical |
-| Multi-Agent | 6h | $30 | ★★★★★ | Advanced users |
+File: `docs/90_ops/COST_TRACKING.md`
 
-**Breakdown (Mixed Approach):**
 ```
-Low tasks (8) with Sonnet:    $1.60
-Medium tasks (7) with Sonnet: $7.00
-High tasks (3) with Opus:     $9.00
-Testing & Deployment:         $3-5
-─────────────────────────────────
-Total:                        $20-25
+┌─────────────────────────────────────────────┐
+│ Cost Dashboard                              │
+├─────────────────────────────────────────────┤
+│ Current:  $18.50 / $25.00 (74%)             │
+│ Remaining: $6.50                            │
+│ ▓▓▓▓▓▓▓░░░ 74%                              │
+│                                             │
+│ Projection: $24.00 (On track ✓)            │
+│ Buffer: $1.00                               │
+└─────────────────────────────────────────────┘
+
+Per Model:
+- Claude Sonnet: $8.70
+- GPT-4o: $6.50
+- Gemini Flash: $3.30
+
+Status: ✓ On Track
 ```
 
 ---
 
-## 🛠️ Troubleshooting
+## 🎯 Quality Standards
 
-### Common Issues
+### Testing Requirements
+- **Minimum Coverage**: 80%
+- **Unit Tests**: All critical functions
+- **Integration Tests**: API endpoints
+- **E2E Tests**: Core user flows
 
-**1. Agent doesn't follow instructions**
-- ✅ Make sure you're using AGENT_START_PROMPT.md
-- ✅ Verify model is Claude Sonnet 4+ or equivalent
+### Code Quality
+- **TypeScript**: Type safety enforced
+- **ESLint**: No warnings allowed
+- **Prettier**: Consistent formatting
+- **Documentation**: JSDoc for all functions
 
-**2. Telegram notifications not working**
-- ✅ Check config.php has correct token/chat ID
-- ✅ Test with: `?setup=true`
-- ✅ Verify server allows outgoing HTTPS
+### Delivery Checklist
+```
+□ All tasks completed (100%)
+□ Tests passing (80%+ coverage)
+□ Security scan clean (no critical issues)
+□ Dependencies updated (no vulnerabilities)
+□ Documentation complete (all files)
+□ README generated (installation guide)
+□ .env.example provided (configuration)
+□ Deployment guide ready (step-by-step)
+```
 
-**3. Persian text broken in terminal**
-- ✅ This is expected (Windows/Linux limitation)
-- ✅ All logs should be in English
-- ✅ Only user docs should be Persian
+---
 
-**4. High costs**
-- ✅ Review task complexity labels
-- ✅ Check if using Opus for Low tasks
-- ✅ Set budget limit
+## 🌟 Advanced Features
+
+### Technology Radar
+
+AI continuously evaluates new technologies and suggests when beneficial:
+```
+"💡 New technology available: Bun 1.0
+
+Benefits for this project:
+- 3x faster than Node.js
+- Built-in TypeScript support
+- Drop-in replacement
+
+Would you like to use it?
+Migration effort: 30 minutes"
+```
+
+### Context Memory
+
+AI remembers decisions across sessions:
+```
+File: docs/00_context/CONTEXT_MEMORY.md
+
+Previous decisions:
+- Database: PostgreSQL (chosen over MongoDB)
+- Auth: JWT (chosen over OAuth initially)
+- Styling: Tailwind CSS (chosen over Material UI)
+
+Reasoning preserved for future reference
+```
+
+### Scalability Planning
+
+AI plans for scale but builds essentials:
+```
+File: docs/90_ops/SCALE_PLAN.md
+
+Now (MVP):
+- Single server
+- SQLite database
+- Simple caching
+
+1K-10K users:
+- Load balancer
+- PostgreSQL
+- Redis cache
+
+10K+ users:
+- Kubernetes
+- Database sharding
+- CDN
+```
+
+---
+
+## 🔗 Inspiration & Integration
+
+MegaPrompt V8 draws inspiration from:
+
+### Cloudflare VibeSDK
+**GitHub**: [cloudflare/vibesdk](https://github.com/cloudflare/vibesdk)
+
+**Learnings**:
+- Phase-wise code generation
+- Container-based execution
+- Real-time preview capabilities
+- Durable Objects for state management
+
+### Cloudflare Agents
+**GitHub**: [cloudflare/agents](https://github.com/cloudflare/agents)
+
+**Learnings**:
+- Stateful AI agent patterns
+- WebSocket communication
+- Persistent memory systems
+- Multi-agent coordination
+
+---
+
+## 📚 Documentation
+
+### Core Files
+- `MEGAPROMPT_V8_FINAL.md` - Complete framework specification
+- `AGENT_START_PROMPT.md` - Quick start for AI agents
+- `CLAUDE.md` - Claude-specific instructions
+- `CODEX.md` - GPT-specific instructions
+- `GEMINI.md` - Gemini-specific instructions
+
+### Integration
+- `.cursorrules` - Cursor IDE configuration
+- `README.md` - This file (GitHub documentation)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please:
+Want to improve MegaPrompt V8?
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create your feature branch
+3. Make improvements
+4. Test thoroughly
+5. Submit pull request
 
-### Areas for Contribution
-
-- [ ] Support for other AI models (GPT-4, Gemini, etc.)
-- [ ] Additional language support
-- [ ] More comparison tables
-- [ ] Dashboard data persistence
-- [ ] CI/CD integration examples
+**Areas for contribution**:
+- Additional AI model support
+- New documentation templates
+- Enhanced security checks
+- Performance optimizations
+- Language translations
 
 ---
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) file for details.
-
-**You are free to:**
-- ✅ Use commercially
-- ✅ Modify
-- ✅ Distribute
-- ✅ Sublicense
-
-**With attribution required**
+MIT License - See [LICENSE](LICENSE) for details
 
 ---
 
 ## 🙏 Acknowledgments
 
-- **Anthropic** - For Claude AI
-- **OpenAI** - For GPT models
-- **Community Contributors** - For feedback and improvements
+- Cloudflare team for VibeSDK and Agents frameworks
+- AI research community for foundational work
+- Open source contributors
 
 ---
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/vibe-coding-v7/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/vibe-coding-v7/discussions)
-- **Email**: your-email@example.com
+- 📖 [Documentation](MEGAPROMPT_V8_FINAL.md)
+- 💬 [Discussions](https://github.com/yourusername/megaprompt-v8/discussions)
+- 🐛 [Issues](https://github.com/yourusername/megaprompt-v8/issues)
 
 ---
 
-## 🔗 Related Links
+## 🚀 Get Started
 
-- [Claude AI Documentation](https://docs.anthropic.com)
-- [OpenAPI Specification](https://swagger.io/specification/)
-- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+1. Choose your AI model (Claude/GPT/Gemini)
+2. Load the appropriate guide (CLAUDE.md/CODEX.md/GEMINI.md)
+3. Read MEGAPROMPT_V8_FINAL.md
+4. Start building!
 
----
-
-## 📊 Project Stats
-
-![GitHub stars](https://img.shields.io/github/stars/yourusername/vibe-coding-v7?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/vibe-coding-v7?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/vibe-coding-v7?style=social)
+**Remember**: AI leads execution, you lead vision. Together, you create amazing products.
 
 ---
 
-<div align="center">
+**Made with ❤️ using AI + Human Collaboration**
 
-**Made with ❤️ by AI-Assisted Development**
-
-[⭐ Star on GitHub](https://github.com/yourusername/vibe-coding-v7) • [🐛 Report Bug](https://github.com/yourusername/vibe-coding-v7/issues) • [✨ Request Feature](https://github.com/yourusername/vibe-coding-v7/issues)
-
-</div>
+*Version 8.0 - Last Updated: 2024-12-31*
